@@ -1,0 +1,124 @@
+.content {
+    width: 100%;
+    height: 100%;
+    margin-top: 60px;
+    padding: 40px 40px;
+}
+.title {
+    margin-bottom: 40px;
+}
+
+.search-box {
+    position: relative;
+    margin-bottom: 40px;
+    width: 500px;
+
+}
+.search-input {
+    width: 80%;
+    padding: 10px;
+    line-height: 1.5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-button {
+    position: absolute;
+    width: 45px;
+    font-size: 22px;
+    padding:6px;
+    top: 0 ; 
+    right: 100px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.search-button:hover {
+    cursor: pointer;
+    background: rgb(8, 194, 194);
+    color: white;
+}
+
+.list-courses {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 250px 250px 250px 250px;
+    text-align: center;
+    grid-column-gap: 78px;
+    grid-row-gap: 52px;
+}
+.course {
+    background: #FFF4A3;
+    border-radius: 10px;
+    padding: 24px;
+    transition: all .3s;
+    display: flex;
+}
+.course:hover {
+    transform: scale(1.05);
+    background: #fceb6f;
+    
+}
+
+/* .course-img {
+    display:none;
+} */
+
+.course-img img{
+    width: 100%;
+    transition: all .3s;
+}
+.course-img img:hover{
+    transform: scale(1.1);
+}
+.course-img , .course-img-js {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 240px;
+}
+.course-img-js img{
+    width: 74%;
+    transition: all .3s;
+}
+.course-img-js img:hover{
+    transform: scale(1.1);
+}
+.course-name {
+    font-size: 40px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.course-description {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.712);
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+.learn-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    padding: 12px 0;
+    background: #282A35;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: all .4s;
+}
+
+/* .learn-btn:hover {
+    background: rgb(8, 194, 194); 
+    color: black;
+} */
+
+
+.learn-btn:hover,
+.learn-btn:focus {
+  box-shadow: 
+    inset 12rem 0 0 0 rgb(8, 194, 194); 
+}
